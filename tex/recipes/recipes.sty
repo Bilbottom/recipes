@@ -47,6 +47,7 @@
 
 \newcommand{\ingredient}[2]{#1\if\relax\detokenize{#2}\relax\else, \red{#2}\fi\tick}
 
+\newcommand{\recipehyperlink}{}
 \newcommand{\recipename}{}
 \newcommand{\recipecreator}{}
 \newcommand{\recipeservings}{}
@@ -75,5 +76,5 @@
 \newcommand{\recipetitle}{
     {\LARGE\blue{\recipename}\hfill\normalsize\recipecreatorandservings}\par%
     \vspace{-\baselineskip}\hrulefill\par%
-    \vspace{-0.5\baselineskip}\hfill{\footnotesize Prep \green{\preptime}, Cook \green{\cooktime}}\par%
+    \vspace{-0.5\baselineskip}{\tiny\textit\recipehyperlink}\hfill{\footnotesize Prep \green{\preptime}, Cook \green{\cooktime}}\par%
 }
